@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jenkins CI/CD Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .container {
+            background: white;
+            width: 60%;
+            margin: auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+        }
+
+        h1 {
+            color: #D33833;
+        }
+
+        .status {
+            color: green;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        footer {
+            margin-top: 20px;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>🚀 Jenkins CI/CD Pipeline Demo</h1>
+
+        <p>This page is deployed automatically using Jenkins.</p>
+
+        <p class="status">✅ Deployment Successful</p>
+
+        <h3>Project Information</h3>
+        <p>Build Tool: Jenkins</p>
+        <p>Version: 1.0</p>
+        <p>Environment: Development</p>
+
+        <button onclick="showMessage()">
+            Check Build Status
+        </button>
+
+        <p id="message"></p>
+
+        <footer>
+            <p>Last Updated via Jenkins Pipeline</p>
+        </footer>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").innerHTML =
+                "🎉 Build Passed Successfully!";
+        }
+    </script>
+
+</body>
+</html>
